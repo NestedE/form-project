@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Web Forms</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Contact Us</h1>
+        <form>
+
+            <section class="first">
+                <h2>How can we help you?</h2>
+                <ul>
+                    <li>
+                        <label for="user-name">Your Name</label>
+                        <input type="text" name="username" id="user-name" required>
+                    </li>
+                    <li>
+                        <label for="email-address">Your Email Address</label>
+                        <input type="email" name="emailaddress" id="email-address" required>
+                    </li>
+                    <li>
+                        <label for="phone-number">Your Phone Number</label>
+                        <input type="number" name="phonenumber" id="phone-number" required>
+                    </li>
+                </ul>
+            </section>
+            <section class="second">
+                <ul>
+                    <li>
+                        <label for="user-text">Your Message</label>
+                        <textarea name="usertext" id="user-text" cols="30" rows="10" required></textarea>
+                    </li>
+                    <li>
+                        <label for="about-info">How did you find us?</label>
+                        <select name="aboutinfo" id="about-info">
+                            <option value="Web Search">Web Search</option>
+                            <option value="Word of Mouth">Word of Mouth</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </li>
+                </ul>
+            </section>
+            <section class="third">
+                <h2>How should we reply?</h2>
+                <div class="form-control-inline">
+                    <input type="radio" id="callbtn" name="contact" value="phone">
+                    <label for="callbtn">Call me</label>
+                </div>
+                <div class="form-control-inline">
+
+                    <input type="radio" id="emailoptn" name="contact" value="email">
+                    <label for="emailoptn">Send an email</label>
+
+                </div>
+                <div class="form-control-inline">
+                    <input type="radio" id="noreply" name="contact" value="noreply">
+                    <label for="noreply">Do not reply</label>
+                </div>
+
+
+                <div class="form-control-inline terms">
+                    <input type="checkbox" id="terms" name="agreement" value="termsagr" required>
+                    <label for="terms">Accept Terms</label>
+                </div>
+            </section>
+            <div class="btn-items">
+                <button type="reset" value="Clear" id="leftbtn">Clear</button>
+                <button type="submit" value="Submit" id="rightbtn">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

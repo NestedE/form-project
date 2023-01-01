@@ -1,0 +1,103 @@
+html {
+	--color-blue-300: rgb(102, 191, 191);
+	--color-grey-200: rgb(139, 136, 136);
+	--color-grey-400: rgb(70, 69, 69);
+	--color-grey-500: rgb(58, 56, 56);
+	--color-white-300: rgb(255, 255, 255);
+}
+
+body {
+	font-family: sans-serif;
+	background-color: var(--color-blue-300);
+	color: var(--color-grey-500);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: center;
+	margin: 2rem;
+}
+
+h2 {
+	margin: 1.3rem 0;
+}
+
+form {
+	width: 34.375rem;
+	margin: auto;
+	background-color: rgb(234, 246, 246);
+	padding: 2rem;
+	border-radius: 5px;
+	box-shadow: 0 2px 8px rgb(0, 0, 0, 0.2);
+}
+
+ul li {
+	list-style: none;
+}
+
+input,
+textarea,
+select {
+	width: 100%;
+	margin-bottom: 1rem;
+	padding: 5px;
+	border: 1px solid var(--color-grey-200);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	background-color: #f76b8a;
+}
+
+.second label {
+	display: block;
+	margin-bottom: 0.5rems;
+}
+
+.second textarea {
+	resize: none;
+}
+
+.form-control-inline {
+	display: flex;
+}
+
+.form-control-inline input {
+	width: auto;
+	margin-right: 0.54rem;
+}
+
+.terms {
+	margin-top: 9px;
+}
+
+.btn-items {
+	text-align: right;
+}
+.btn-items button {
+	padding: 8px 20px;
+	border: 1px solid var(--color-grey-200);
+	border-radius: 3px;
+}
+
+#rightbtn {
+	background-color: var(--color-grey-500);
+	color: var(--color-white-300);
+}
+
+#rightbtn:hover {
+	background-color: var(--color-grey-400);
+	color: var(--color-white-300);
+	cursor: pointer;
+}
+
+#leftbtn:hover {
+	background-color: var(--color-grey-200);
+	color: var(--color-white-300);
+	cursor: pointer;
+}
