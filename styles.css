@@ -23,6 +23,7 @@ h1 {
 }
 
 h2 {
+	font-size: 1rem;
 	margin: 1.3rem 0;
 }
 
@@ -39,6 +40,11 @@ ul li {
 	list-style: none;
 }
 
+label {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
 input,
 textarea,
 select {
@@ -51,7 +57,7 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-	background-color: #f76b8a;
+	background-color: rgb(236, 244, 244);
 }
 
 .second label {
